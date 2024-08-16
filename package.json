@@ -1,0 +1,27 @@
+{
+  "name": "tauriuse",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "bun test",
+    "build": "bun ./scripts/build.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "peerDependencies": {
+    "@tauri-apps/plugin-http": "^2.0.0-rc.0",
+    "vue": ">=3.0.0"
+  },
+  "dependencies": {
+    "@vueuse/core": "^11.0.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.25.2",
+    "@types/bun": "latest",
+    "bun-plugin-dts": "^0.2.3",
+    "eslint": "^9.9.0",
+    "typescript": "^5.5.4"
+  }
+}
